@@ -26,6 +26,7 @@ jobs:
       - name: Install dependencies
         run: |
           pip install django==4.2
+          pip install pyquery
           pip install pytest
       - name: Test with pytest
         run: pytest multi_email_field/tests/tests.py
